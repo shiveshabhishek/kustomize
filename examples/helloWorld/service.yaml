@@ -5,8 +5,9 @@ metadata:
 spec:
   selector:
     deployment: hello
-  type: LoadBalancer
+  type: NodePort
   ports:
   - protocol: TCP
     port: 8666
     targetPort: 8080
+    nodePort: 32101
